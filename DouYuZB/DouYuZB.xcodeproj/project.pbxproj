@@ -50,12 +50,68 @@
 		1F173169230939EC00AFA3D6 /* DouYuZB */ = {
 			isa = PBXGroup;
 			children = (
+				1F17317C2309594100AFA3D6 /* Classes */,
 				1F17316A230939EC00AFA3D6 /* AppDelegate.swift */,
 				1F17316E230939EC00AFA3D6 /* Main.storyboard */,
 				1F173171230939EE00AFA3D6 /* Assets.xcassets */,
 				1F173176230939EE00AFA3D6 /* Info.plist */,
 			);
 			path = DouYuZB;
+			sourceTree = "<group>";
+		};
+		1F17317C2309594100AFA3D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F1731822309594100AFA3D6 /* Main */,
+				1F17317D2309594100AFA3D6 /* Home */,
+				1F1731812309594100AFA3D6 /* Live */,
+				1F17317F2309594100AFA3D6 /* Follow */,
+				1F1731802309594100AFA3D6 /* Profile */,
+				1F17317E2309594100AFA3D6 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1F17317D2309594100AFA3D6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1F17317E2309594100AFA3D6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1F17317F2309594100AFA3D6 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		1F1731802309594100AFA3D6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1F1731812309594100AFA3D6 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		1F1731822309594100AFA3D6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
