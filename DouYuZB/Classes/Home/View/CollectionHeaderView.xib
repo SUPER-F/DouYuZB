@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgp-7Q-Nog">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="8yF-a7-Lw2"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="home_header_normal" translatesAutoresizingMaskIntoConstraints="NO" id="AXS-uc-VmH">
+                    <rect key="frame" x="10" y="21" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="rRN-k3-nAF"/>
+                        <constraint firstAttribute="width" constant="18" id="srz-Zp-wRp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryl-5F-BE9">
+                    <rect key="frame" x="33" y="20" width="207" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="37a-qw-MyZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxX-h5-gcK">
+                    <rect key="frame" x="250" y="10" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="M5X-7t-FRq"/>
+                        <constraint firstAttribute="height" constant="40" id="YGA-iz-m5g"/>
+                    </constraints>
+                    <state key="normal" title="更多 &gt;">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ryl-5F-BE9" firstAttribute="centerY" secondItem="AXS-uc-VmH" secondAttribute="centerY" id="45C-TZ-SQs"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="rxX-h5-gcK" secondAttribute="trailing" constant="10" id="Lzn-Zj-jPN"/>
+                <constraint firstItem="Sgp-7Q-Nog" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="PpD-Jf-bYe"/>
+                <constraint firstItem="rxX-h5-gcK" firstAttribute="centerY" secondItem="AXS-uc-VmH" secondAttribute="centerY" id="Qm1-zI-eHN"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="Sgp-7Q-Nog" secondAttribute="trailing" id="S4w-Ar-RHZ"/>
+                <constraint firstItem="AXS-uc-VmH" firstAttribute="top" secondItem="Sgp-7Q-Nog" secondAttribute="top" constant="21" id="UlE-6T-08U"/>
+                <constraint firstItem="Ryl-5F-BE9" firstAttribute="leading" secondItem="AXS-uc-VmH" secondAttribute="trailing" constant="5" id="X21-Nv-9oT"/>
+                <constraint firstItem="AXS-uc-VmH" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="gsX-O5-gy3"/>
+                <constraint firstItem="Sgp-7Q-Nog" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="lzV-rb-2Z4"/>
+                <constraint firstItem="rxX-h5-gcK" firstAttribute="leading" secondItem="Ryl-5F-BE9" secondAttribute="trailing" constant="10" id="oIY-Ml-InX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="home_header_normal" width="18" height="18"/>
+    </resources>
+</document>

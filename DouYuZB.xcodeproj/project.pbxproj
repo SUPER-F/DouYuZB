@@ -21,6 +21,9 @@
 		1FE6A871230ADD1700F26EBA /* CommonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6A870230ADD1700F26EBA /* CommonLayout.swift */; };
 		1FE6A873230AF5DA00F26EBA /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6A872230AF5DA00F26EBA /* PageContentView.swift */; };
 		1FE6A875230AF9DD00F26EBA /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6A874230AF9DD00F26EBA /* UIColor-Extension.swift */; };
+		1FE6A8A82312E80300F26EBA /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6A8A72312E80300F26EBA /* RecommendViewController.swift */; };
+		1FE6A8AB231439C500F26EBA /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6A8A9231439C500F26EBA /* CollectionHeaderView.swift */; };
+		1FE6A8AC231439C500F26EBA /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE6A8AA231439C500F26EBA /* CollectionHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		1FE6A870230ADD1700F26EBA /* CommonLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLayout.swift; sourceTree = "<group>"; };
 		1FE6A872230AF5DA00F26EBA /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		1FE6A874230AF9DD00F26EBA /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		1FE6A8A72312E80300F26EBA /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		1FE6A8A9231439C500F26EBA /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		1FE6A8AA231439C500F26EBA /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,7 @@
 			children = (
 				1FE6A8562309995500F26EBA /* Home.storyboard */,
 				1FE6A86923099A1800F26EBA /* HomeViewController.swift */,
+				1FE6A8A72312E80300F26EBA /* RecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +200,8 @@
 		1FE6A8582309995500F26EBA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1FE6A8A9231439C500F26EBA /* CollectionHeaderView.swift */,
+				1FE6A8AA231439C500F26EBA /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +345,7 @@
 				1FE6A8592309995500F26EBA /* Home.storyboard in Resources */,
 				1FE6A8682309999300F26EBA /* Profile.storyboard in Resources */,
 				1F173172230939EE00AFA3D6 /* Assets.xcassets in Resources */,
+				1FE6A8AC231439C500F26EBA /* CollectionHeaderView.xib in Resources */,
 				1FE6A8542309992E00F26EBA /* Follow.storyboard in Resources */,
 				1F173170230939EC00AFA3D6 /* Main.storyboard in Resources */,
 				1FE6A85E2309996D00F26EBA /* Live.storyboard in Resources */,
@@ -350,7 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE6A871230ADD1700F26EBA /* CommonLayout.swift in Sources */,
+				1FE6A8AB231439C500F26EBA /* CollectionHeaderView.swift in Sources */,
 				1FE6A875230AF9DD00F26EBA /* UIColor-Extension.swift in Sources */,
+				1FE6A8A82312E80300F26EBA /* RecommendViewController.swift in Sources */,
 				1FE6A8632309998300F26EBA /* MainViewController.swift in Sources */,
 				1F17316B230939EC00AFA3D6 /* AppDelegate.swift in Sources */,
 				1FE6A873230AF5DA00F26EBA /* PageContentView.swift in Sources */,
