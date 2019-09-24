@@ -8,11 +8,17 @@
 
 import UIKit
 
-class CollectionPrettyCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+class CollectionPrettyCell: CollectionBaseCell {
+    
+    @IBOutlet weak var placeBtn: UIButton!
+    
+    override var anchor: AnchorModel? {
+        didSet {
+            super.anchor = anchor
+            
+            placeBtn.setTitle(anchor?.anchor_city, for: .normal)
+            
+        }
     }
 
 }
