@@ -10,6 +10,7 @@ import UIKit
 
 class RecommendVM {
     // 组对象
+    lazy var cycleModels: [CycleModel] = [CycleModel]()
     lazy var anchorGroups: [AnchorGroup] = [AnchorGroup]()
     private lazy var hotGroup: AnchorGroup = AnchorGroup()
     private lazy var faceGroup: AnchorGroup = AnchorGroup()
@@ -17,6 +18,7 @@ class RecommendVM {
 
 // 发送网络请求
 extension RecommendVM {
+    // 请求推荐数据
     func requestData(completion: @escaping () -> ()) {
         // 0.定义参数
         let paras = ["limit" : "4", "offset" : "0", "time" : NSDate.getCurrentTime()]
@@ -108,6 +110,25 @@ extension RecommendVM {
         dGroup.notify(queue: DispatchQueue.main) {
             self.anchorGroups.insert(self.faceGroup, at: 0)
             self.anchorGroups.insert(self.hotGroup, at: 0)
+            completion()
+        }
+    }
+}
+
+extension RecommendVM {
+    // 请求无限轮播数据
+    func requestCycleData(completion: @escaping () -> ()) {
+        NetworkTool.requestData(type: .GET, urlString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version" : "2.300"]) { (result) in
+            // 1.获取整体字典数据
+            guard let resultDict = result as? [String : NSObject] else { return }
+            // 2.根据data的key获取数据
+            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
+            
+            // 3.字典转模型对象
+            for dict in dataArray {
+                self.cycleModels.append(CycleModel(dict: dict))
+            }
+            
             completion()
         }
     }

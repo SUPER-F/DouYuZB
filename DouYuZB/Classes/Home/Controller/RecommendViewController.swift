@@ -14,6 +14,7 @@ private let kItemNormalH: CGFloat = kItemW * 3 / 4.0
 private let kItemPrettyH: CGFloat = kItemW * 4 / 3.0
 private let kHeaderViewH: CGFloat = 50
 private let kCycleViewH: CGFloat = kScreenW * 3 / 8.0
+private let kGameViewH: CGFloat = 90
 
 private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
@@ -47,9 +48,15 @@ class RecommendViewController: UIViewController {
     
     private lazy var cycleView: RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView()
-        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
         
         return cycleView
+    }()
+    
+    private lazy var gameView: RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
     }()
 
     override func viewDidLoad() {
@@ -67,20 +74,34 @@ class RecommendViewController: UIViewController {
 extension RecommendViewController {
     private func setupUI() {
         view.backgroundColor = UIColor.white
+        
         // 添加collectionview
         view.addSubview(collectionView)
+        
         // 添加cycleview
         collectionView.addSubview(cycleView)
+        
+        // 添加gameView
+        collectionView.addSubview(gameView)
+        
         // 设置collectionview内边距
-        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
 // 请求数据
 extension RecommendViewController {
     private func loadData() {
+        // 请求推荐数据
         recommendVM.requestData {
+            // 刷新列表
             self.collectionView.reloadData()
+            // 给gameView 赋值
+            self.gameView.groups = self.recommendVM.anchorGroups
+        }
+        // 请求轮播数据
+        recommendVM.requestCycleData {
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
         }
     }
 }

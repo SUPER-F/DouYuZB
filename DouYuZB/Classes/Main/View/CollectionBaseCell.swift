@@ -29,10 +29,10 @@ class CollectionBaseCell: UICollectionViewCell {
             
             nickNameLabel.text = anchor.nickname
             
-            guard let iconUrl = NSURL(string: anchor.vertical_src) else {
+            guard let iconUrl = URL(string: anchor.vertical_src) else {
                 return
             }
-            bgImgv.kf.setImage(with: ImageResource(downloadURL: iconUrl as URL))
+            bgImgv.kf.setImage(with: iconUrl)
         }
     }
 }
