@@ -94,10 +94,21 @@ extension RecommendViewController {
     private func loadData() {
         // 请求推荐数据
         recommendVM.requestData {
-            // 刷新列表
+            // 1.刷新列表
             self.collectionView.reloadData()
-            // 给gameView 赋值
-            self.gameView.groups = self.recommendVM.anchorGroups
+            
+            // 2.给gameView 赋值
+            var groups = self.recommendVM.anchorGroups
+            // 2.1.移除前两组数据
+            groups.removeFirst()
+            groups.removeFirst()
+            
+            // 2.2.添加更多按钮
+            let moreGroup = AnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            
+            self.gameView.groups = groups
         }
         // 请求轮播数据
         recommendVM.requestCycleData {
