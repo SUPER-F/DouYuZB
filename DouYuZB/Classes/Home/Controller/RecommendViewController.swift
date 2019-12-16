@@ -159,3 +159,30 @@ extension RecommendViewController : UICollectionViewDataSource, UICollectionView
         return headerView
     }
 }
+
+extension RecommendViewController : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // 1.取出对应的主播信息
+        let anchor = recommendVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        
+        //2.判断是秀场直播|普通直播
+        anchor.isVertical == 0 ? pushNormalRoomVC() : presentShowRoomVC()
+    }
+    
+    private func presentShowRoomVC() {
+        // 1.创建秀场直播VC
+        let showRoomVC = RoomShowViewController()
+//        showRoomVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        
+        // 2.以modal方式跳转
+        present(showRoomVC, animated: true, completion: nil)
+    }
+    
+    private func pushNormalRoomVC() {
+        // 1.创建普通直播VC
+        let normalRoomVC = RoomNormalViewController()
+        
+        // 2.以push方式跳转
+        navigationController?.pushViewController(normalRoomVC, animated: true)
+    }
+}

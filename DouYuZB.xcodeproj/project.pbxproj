@@ -31,6 +31,15 @@
 		1FE3257C23813D0600A284EF /* GameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3257B23813D0600A284EF /* GameVM.swift */; };
 		1FE3257E2381401C00A284EF /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3257D2381401C00A284EF /* GameModel.swift */; };
 		1FE32580238190BF00A284EF /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3257F238190BF00A284EF /* BaseGameModel.swift */; };
+		1FE325862382EBCA00A284EF /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE325852382EBCA00A284EF /* AmuseViewController.swift */; };
+		1FE325882382EEC700A284EF /* AmuseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE325872382EEC700A284EF /* AmuseVM.swift */; };
+		1FE3258A238431C300A284EF /* AmuseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE32589238431C300A284EF /* AmuseMenuView.swift */; };
+		1FE3258C238431DC00A284EF /* AmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3258B238431DC00A284EF /* AmuseMenuView.xib */; };
+		1FE3258F238439EF00A284EF /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3258D238439EF00A284EF /* AmuseMenuViewCell.swift */; };
+		1FE32590238439EF00A284EF /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3258E238439EF00A284EF /* AmuseMenuViewCell.xib */; };
+		1FE325962386DAB700A284EF /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE325952386DAB700A284EF /* RoomShowViewController.swift */; };
+		1FE325982386DAC200A284EF /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE325972386DAC200A284EF /* RoomNormalViewController.swift */; };
+		1FE3259A2386E50400A284EF /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE325992386E50400A284EF /* CustomNavController.swift */; };
 		1FE6A8542309992E00F26EBA /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE6A8502309992D00F26EBA /* Follow.storyboard */; };
 		1FE6A8592309995500F26EBA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE6A8562309995500F26EBA /* Home.storyboard */; };
 		1FE6A85E2309996D00F26EBA /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE6A85C2309996D00F26EBA /* Live.storyboard */; };
@@ -77,6 +86,15 @@
 		1FE3257B23813D0600A284EF /* GameVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVM.swift; sourceTree = "<group>"; };
 		1FE3257D2381401C00A284EF /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		1FE3257F238190BF00A284EF /* BaseGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
+		1FE325852382EBCA00A284EF /* AmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		1FE325872382EEC700A284EF /* AmuseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseVM.swift; sourceTree = "<group>"; };
+		1FE32589238431C300A284EF /* AmuseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseMenuView.swift; sourceTree = "<group>"; };
+		1FE3258B238431DC00A284EF /* AmuseMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmuseMenuView.xib; sourceTree = "<group>"; };
+		1FE3258D238439EF00A284EF /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
+		1FE3258E238439EF00A284EF /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
+		1FE325952386DAB700A284EF /* RoomShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
+		1FE325972386DAC200A284EF /* RoomNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
+		1FE325992386E50400A284EF /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
 		1FE6A8502309992D00F26EBA /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		1FE6A8562309995500F26EBA /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		1FE6A85C2309996D00F26EBA /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
@@ -142,6 +160,7 @@
 		1F17317C2309594100AFA3D6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1FE325912386DA9F00A284EF /* Room */,
 				1F1731822309594100AFA3D6 /* Main */,
 				1F17317D2309594100AFA3D6 /* Home */,
 				1F1731812309594100AFA3D6 /* Live */,
@@ -218,8 +237,42 @@
 			children = (
 				1F5B1B0C232FE4C300E5CB71 /* RecommendVM.swift */,
 				1FE3257B23813D0600A284EF /* GameVM.swift */,
+				1FE325872382EEC700A284EF /* AmuseVM.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1FE325912386DA9F00A284EF /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				1FE325922386DA9F00A284EF /* Controller */,
+				1FE325932386DA9F00A284EF /* Model */,
+				1FE325942386DA9F00A284EF /* View */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		1FE325922386DA9F00A284EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FE325952386DAB700A284EF /* RoomShowViewController.swift */,
+				1FE325972386DAC200A284EF /* RoomNormalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1FE325932386DA9F00A284EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FE325942386DA9F00A284EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1FE6A84F2309992D00F26EBA /* Controller */ = {
@@ -251,6 +304,7 @@
 				1FE6A86923099A1800F26EBA /* HomeViewController.swift */,
 				1FE6A8A72312E80300F26EBA /* RecommendViewController.swift */,
 				1FE32579238134A900A284EF /* GameViewController.swift */,
+				1FE325852382EBCA00A284EF /* AmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,6 +331,10 @@
 				1FA1A9CA2380458C00F2C701 /* RecommendGameView.xib */,
 				1FA1A9CC2380530A00F2C701 /* CollectionGameCell.swift */,
 				1FA1A9CD2380530A00F2C701 /* CollectionGameCell.xib */,
+				1FE32589238431C300A284EF /* AmuseMenuView.swift */,
+				1FE3258B238431DC00A284EF /* AmuseMenuView.xib */,
+				1FE3258D238439EF00A284EF /* AmuseMenuViewCell.swift */,
+				1FE3258E238439EF00A284EF /* AmuseMenuViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +390,7 @@
 			children = (
 				1F17316E230939EC00AFA3D6 /* Main.storyboard */,
 				1FE6A8622309998300F26EBA /* MainViewController.swift */,
+				1FE325992386E50400A284EF /* CustomNavController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -449,9 +508,11 @@
 				1FE6A8592309995500F26EBA /* Home.storyboard in Resources */,
 				1FE6A8682309999300F26EBA /* Profile.storyboard in Resources */,
 				1F173172230939EE00AFA3D6 /* Assets.xcassets in Resources */,
+				1FE32590238439EF00A284EF /* AmuseMenuViewCell.xib in Resources */,
 				1FA1A9C7237FFEBB00F2C701 /* CollectionCycleCell.xib in Resources */,
 				1FA1A9CF2380530A00F2C701 /* CollectionGameCell.xib in Resources */,
 				1FA1A9CB2380458C00F2C701 /* RecommendGameView.xib in Resources */,
+				1FE3258C238431DC00A284EF /* AmuseMenuView.xib in Resources */,
 				1FE6A8AC231439C500F26EBA /* CollectionHeaderView.xib in Resources */,
 				1FE6A8542309992E00F26EBA /* Follow.storyboard in Resources */,
 				1F173170230939EC00AFA3D6 /* Main.storyboard in Resources */,
@@ -510,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE325882382EEC700A284EF /* AmuseVM.swift in Sources */,
 				1FDC8B6A233A6564009B771D /* RecommendCycleView.swift in Sources */,
 				1FE6A871230ADD1700F26EBA /* CommonLayout.swift in Sources */,
 				1FE6A8AB231439C500F26EBA /* CollectionHeaderView.swift in Sources */,
@@ -524,16 +586,22 @@
 				1FE3257E2381401C00A284EF /* GameModel.swift in Sources */,
 				1FE32580238190BF00A284EF /* BaseGameModel.swift in Sources */,
 				1F17316B230939EC00AFA3D6 /* AppDelegate.swift in Sources */,
+				1FE325862382EBCA00A284EF /* AmuseViewController.swift in Sources */,
 				1F5B1B11233122CE00E5CB71 /* AnchorModel.swift in Sources */,
+				1FE3258A238431C300A284EF /* AmuseMenuView.swift in Sources */,
 				1F5B1B132331246D00E5CB71 /* AnchorGroup.swift in Sources */,
 				1FA1A9C92380457800F2C701 /* RecommendGameView.swift in Sources */,
+				1FE325962386DAB700A284EF /* RoomShowViewController.swift in Sources */,
 				1FE6A873230AF5DA00F26EBA /* PageContentView.swift in Sources */,
 				1FE6A86F230AD9EB00F26EBA /* PageTitleView.swift in Sources */,
+				1FE325982386DAC200A284EF /* RoomNormalViewController.swift in Sources */,
 				1F5B1B15233522C000E5CB71 /* CollectionBaseCell.swift in Sources */,
 				1F5B1B0F232FE60F00E5CB71 /* NSDate-Extension.swift in Sources */,
 				1FA1A9CE2380530A00F2C701 /* CollectionGameCell.swift in Sources */,
+				1FE3258F238439EF00A284EF /* AmuseMenuViewCell.swift in Sources */,
 				1FE6A86D2309A63200F26EBA /* UIBarButtonItem-Extension.swift in Sources */,
 				1FA860992316CFFB00984A58 /* CollectionPrettyCell.swift in Sources */,
+				1FE3259A2386E50400A284EF /* CustomNavController.swift in Sources */,
 				1FE6A8AF2315818300F26EBA /* CollectionNormalCell.swift in Sources */,
 				1FE3257C23813D0600A284EF /* GameVM.swift in Sources */,
 				1FE6A86A23099A1800F26EBA /* HomeViewController.swift in Sources */,
